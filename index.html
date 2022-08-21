@@ -8,82 +8,99 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
-    <h1>My Five Best Player</h1>
-    <div class="grid grid-cols-4 gap-4 w-3/4 mx-auto"  >
+<body class="bg-black">
+    <h1 class=" font-extrabold text-center text-5xl text-white mt-5 mb-10">My Five Best Player</h1>
+    <div class=" grid grid-cols-4 gap-4 w-3/4 mx-auto"  >
         <div class="bg-black border-2 border-indigo-600" >
             <div class="max-w-sm rounded overflow-hidden shadow-lg">
                 <img class="w-full" src="/img/1.png" alt="Sunset in the mountains">
                 <div class="px-6 py-4 grid  content-center">
-                  <div class="font-bold text-xl mb-2 text-center text-white">Kylian Mbappé</div>
-                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded grid content-center text-white">Select</button>
+                  <div id="player-name-1" class="font-bold text-xl mb-2 text-center text-white">Kylian Mbappé</div>
+                  <button id="btn-1" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded grid content-center text-white">Select</button>
                 </div>
               </div>
         </div>
-        <div  class="bg-teal-400">
+        <div  class="">
             <div class="bg-black border-2 border-indigo-600" >
                 <div class="max-w-sm rounded overflow-hidden shadow-lg">
                     <img class="w-full" src="/img/2.png" alt="Sunset in the mountains">
                     <div class="px-6 py-4 grid  content-center">
-                      <div class="font-bold text-xl mb-2 text-center text-white">Sergio Ramos</div>
-                      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded grid content-center text-white">Select</button>
+                      <div id="player-name-2" class="font-bold text-xl mb-2 text-center text-white">Sergio Ramos</div>
+                      <button id="btn-2" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded grid content-center text-white">Select</button>
                     </div>
                   </div>
             </div>
         </div>
-        <div  class="bg-teal-400">        
+        <div  class="">        
             <div class="bg-black border-2 border-indigo-600" >
             <div class="max-w-sm rounded overflow-hidden shadow-lg">
                 <img class="w-full" src="/img/3.png" alt="Sunset in the mountains">
                 <div class="px-6 py-4 grid  content-center">
-                  <div class="font-bold text-xl mb-2 text-center text-white">Neymar Jr</div>
-                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded grid content-center text-white">Select</button>
+                  <div id="player-name-3" class="font-bold text-xl mb-2 text-center text-white">Neymar Jr</div>
+                  <button id="btn-3" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded grid content-center text-white">Select</button>
                 </div>
               </div>
         </div></div>
-        <div  class="bg-black">
+        <div  class="">
             <h2 class="text-3xl text-white text-center my-3 ">Selected Players</h2>
             
             <div class="grid justify-around ">
                 
-                <ol id="myul" class="list-decimal text-2xl text-white">
-                        <li>hello</li>
-                        <li>world</li>
-                        <li>hello</li>
-                        <li>world</li>
-                        <li>world</li>
+                <ol id="myul" class="list-decimal text-xl text-white">
+                        
                    </ol>
             </div>
             
         </div>
-        <div  class="bg-teal-400">        <div class="bg-black border-2 border-indigo-600" >
+        <div  class="">        <div class="bg-black border-2 border-indigo-600" >
             <div class="max-w-sm rounded overflow-hidden shadow-lg">
                 <img class="w-full" src="/img/4.png" alt="Sunset in the mountains">
                 <div class="px-6 py-4 grid  content-center">
-                  <div class="font-bold text-xl mb-2 text-center text-white">Lionel Messi</div>
-                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded grid content-center text-white">Select</button>
+                  <div id="player-name-4" class="font-bold text-xl mb-2 text-center text-white">Lionel Messi</div>
+                  <button id="btn-4" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded grid content-center text-white">Select</button>
                 </div>
               </div>
         </div></div>
-        <div  class="bg-teal-400">        <div class="bg-black border-2 border-indigo-600" >
+        <div  class="">        <div class="bg-black border-2 border-indigo-600" >
             <div class="max-w-sm rounded overflow-hidden shadow-lg">
                 <img class="w-full" src="/img/5.png" alt="Sunset in the mountains">
                 <div class="px-6 py-4 grid  content-center">
-                  <div class="font-bold text-xl mb-2 text-center text-white">Renato Sanches</div>
-                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded grid content-center text-white">Select</button>
+                  <div id="player-name-5" class="font-bold text-xl mb-2 text-center text-white">Renato Sanches</div>
+                  <button id="btn-5" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded grid content-center text-white">Select</button>
                 </div>
               </div>
         </div></div>
-        <div  class="bg-teal-400">        <div class="bg-black border-2 border-indigo-600" >
+        <div  class="">        <div class="bg-black border-2 border-indigo-600" >
             <div class="max-w-sm rounded overflow-hidden shadow-lg">
                 <img class="w-full" src="/img/6.png" alt="Sunset in the mountains">
                 <div class="px-6 py-4 grid  content-center">
-                  <div class="font-bold text-xl mb-2 text-center text-white">Vítor Machado</div>
-                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded grid content-center text-white">Select</button>
+                  <div id="player-name-6" class="font-bold text-xl mb-2 text-center text-white">Vítor Machado</div>
+                  <button id="btn-6" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded grid content-center text-white">Select</button>
                 </div>
               </div>
         </div></div>
-        <div class="bg-teal-400">08</div>
+        <div class="">
+            <div class="px-6 py-4 grid  content-center">
+                <h1 class="text-center text-bold text-3xl mb-5 text-white " >Player Budget</h1>
+                
+                <div class="flex justify-between my-2 ">
+                    <p class="text-white">Per Player</p>
+                    <input class="shrink w-20 h-6 bg-slate-400 " type="text">
+                </div>
+                <button id="btn-6" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded grid content-center text-white mb-4 mt-2">Calculate</button>
+                <p class="mb-3 text-white">Player Expenses  $<span>5000</span> </p>
+                <div class="flex justify-between my-2 ">
+                    <p class="text-white">Manager</p>
+                    <input class="shrink w-20 h-6 bg-slate-400 " type="text">
+                </div>
+                <div class="flex justify-between my-2  ">
+                    <p class="text-white">Coach</p>
+                    <input class="shrink w-20 h-6 bg-slate-400 " type="text">
+                </div>
+                <button id="btn-6" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded grid content-center text-white mt-2 mb-5 ">Calculate Total</button>
+                <p class="text-center text-white" >Total  $<span>5000</span> </p>
+              </div>
+        </div>
       </div>
 
       
