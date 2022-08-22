@@ -69,11 +69,11 @@ function addPlayerName(playerId, buttonId){
     const listLen = listItemCounter()
     if(listLen >= 5){
         const deleteDiv = document.getElementById('player-left-text')
-        deleteDiv.remove()
-        const mainDiv = document.getElementById('selected-player-div')
+        deleteDiv.style.display = 'none'
+        const mainDiv = document.getElementById('no-player')
         const p  = document.createElement('p')
-        p.innerHTML =`<p class="mt-1 text-red-600 text-center">No Player Left!!</p>`
-        mainDiv.appendChild(p)
+        p.innerHTML =`<p class="mt-1 mb-2 text-red-600 text-center">No Player Left!!</p>`
+        mainDiv.prepend(p)
         buttonDisable(buttonId)
     }else{
     addListItem(getPlayerName(playerId))
