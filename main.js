@@ -28,10 +28,12 @@ function perPlayerExpense(){
     const perPlayerInputFieldToInt = parseInt(perPlayerInputField.value)
     if( perPlayerInputField.value === '') {
         alert("Put Per Player Amount To Calculate")
+        return 0
     }{
         const totalPlayerExpense = perPlayerInputFieldToInt*len
         return totalPlayerExpense
     }
+    
 }
 
 function totalTeamExpense(){
@@ -45,6 +47,7 @@ function totalTeamExpense(){
 
     if(managerInputField.value === ''){
         alert("Put Manager Coach Amount To Calculate")
+        return 0
     }
 
     let totalExpense = playerExpense + managerInputFieldToInt + coachInputFieldToInt
@@ -61,6 +64,8 @@ function playerLeftCounter(){
 function addPlayerName(playerId, buttonId){
     const listLen = listItemCounter()
     if(listLen >= 5){
+        const deleteDiv = document.getElementById('player-left-text')
+        deleteDiv.remove()
         const mainDiv = document.getElementById('selected-player-div')
         const p  = document.createElement('p')
         p.innerHTML =`<p class="mt-1 text-red-600 text-center">No Player Left!!</p>`
