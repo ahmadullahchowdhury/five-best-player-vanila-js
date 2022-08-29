@@ -67,19 +67,17 @@ function playerLeftCounter(){
 // other wise it will show error
 function addPlayerName(playerId, buttonId){
     const listLen = listItemCounter()
+    
     if(listLen >= 5){
-        const deleteDiv = document.getElementById('player-left-text')
-        deleteDiv.style.display = 'none'
-        const mainDiv = document.getElementById('no-player')
-        const p  = document.createElement('p')
-        p.innerHTML =`<p class="mt-1 mb-2 text-red-600 text-center">No Player Left!!</p>`
-        mainDiv.prepend(p)
-        buttonDisable(buttonId)
+        const deleteDiv1 = document.getElementById('player-left-text')
+        deleteDiv1.innerHTML =`<p class="blink_me" mb-2 text-center">No Player Left!!</p>`
+
+        
     }else{
     addListItem(getPlayerName(playerId))
     buttonDisable(buttonId)
-    }
     playerLeftCounter()
+    }
 }
 
 // selecting btn 1
@@ -107,6 +105,7 @@ document.getElementById('btn-5').addEventListener('click', function(){
 document.getElementById('btn-6').addEventListener('click', function(){
     addPlayerName('player-name-6','btn-6')
 })
+
 
 
 // function to update UI  player cost
